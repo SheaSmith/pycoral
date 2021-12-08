@@ -12,7 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 SHELL := /bin/bash
-PYTHON ?= $(shell which python3)
+(shell apt-get update && apt-get install -y python3.8 python3-pip curl && curl https://bootstrap.pypa.io/get-pip.py | python3.8 -)
+PYTHON ?= $(shell which python3.8)
 MAKEFILE_DIR := $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
 PY3_VER ?= $(shell $(PYTHON) -c "import sys;print('%d%d' % sys.version_info[:2])")
 OS := $(shell uname -s)
