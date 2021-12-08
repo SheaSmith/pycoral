@@ -18,7 +18,7 @@ set -ex
 readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 readonly MAKEFILE="${SCRIPT_DIR}/../Makefile"
 readonly DOCKER_CPUS="${DOCKER_CPUS:=k8 aarch64 armv7a}"
-PYTHON_VERSIONS="36 37 38 39"
+PYTHON_VERSIONS="38"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
