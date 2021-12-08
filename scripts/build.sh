@@ -39,10 +39,10 @@ done
 
 function docker_image {
   case $1 in
-    36) echo "ubuntu:18.04" ;;
-    37) echo "debian:buster" ;;
-    38) echo "ubuntu:20.04" ;;
-    39) echo "debian:bullseye" ;;
+    36) echo "nvcr.io/nvidia/l4t-base:r32.6.1" ;;
+    37) echo "nvcr.io/nvidia/l4t-base:r32.6.1" ;;
+    38) echo "nvcr.io/nvidia/l4t-base:r32.6.1" ;;
+    39) echo "nvcr.io/nvidia/l4t-base:r32.6.1" ;;
     *) echo "Unsupported python version: $1" 1>&2; exit 1 ;;
   esac
 }
